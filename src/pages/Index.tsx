@@ -129,19 +129,19 @@ const Index = () => {
         )}
       </button>
 
-      {/* Top right paw */}
+      {/* Top right paw - masked by corner */}
       <img
         src="https://res.cloudinary.com/dg8flcdqo/image/upload/v1762443217/Purrfect_welcome_50_bzmvos.png"
         alt=""
-        className="fixed top-0 right-0 w-[500px] h-auto animate-slideInTopRight pointer-events-none"
+        className="fixed -top-32 -right-32 w-[500px] h-auto animate-slideInTopRight pointer-events-none"
         aria-hidden="true"
       />
 
-      {/* Bottom left paw */}
+      {/* Bottom left paw - masked by corner */}
       <img
         src="https://res.cloudinary.com/dg8flcdqo/image/upload/v1762443216/Purrfect_welcome_49_qe06cx.png"
         alt=""
-        className="fixed bottom-0 left-0 w-[500px] h-auto animate-slideInBottomLeft pointer-events-none"
+        className="fixed -bottom-32 -left-32 w-[500px] h-auto animate-slideInBottomLeft pointer-events-none"
         aria-hidden="true"
       />
 
