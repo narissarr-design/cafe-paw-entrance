@@ -96,7 +96,7 @@ const Index = () => {
       {/* Mute button */}
       <button
         onClick={toggleMute}
-        className="fixed top-5 right-5 w-12 h-12 bg-cream border-3 border-brown rounded-full flex items-center justify-center z-50 transition-transform hover:scale-110 focus-visible:outline-3 focus-visible:outline-brown focus-visible:outline-offset-4"
+        className="fixed top-5 right-5 md:top-4 md:right-4 sm:top-3 sm:right-3 w-12 h-12 md:w-11 md:h-11 sm:w-10 sm:h-10 bg-cream border-3 border-brown rounded-full flex items-center justify-center z-50 transition-transform hover:scale-110 focus-visible:outline-3 focus-visible:outline-brown focus-visible:outline-offset-4"
         aria-label="Toggle background music"
       >
         {isMuted ? (
@@ -140,7 +140,7 @@ const Index = () => {
       <img
         src="https://res.cloudinary.com/dg8flcdqo/image/upload/v1762443217/Purrfect_welcome_50_bzmvos.png"
         alt=""
-        className="fixed -top-32 -right-32 w-[500px] h-auto animate-slideInTopRight pointer-events-none"
+        className="fixed -top-32 -right-32 w-[500px] md:w-[500px] sm:w-[350px] h-auto animate-slideInTopRight pointer-events-none"
         aria-hidden="true"
       />
 
@@ -148,7 +148,7 @@ const Index = () => {
       <img
         src="https://res.cloudinary.com/dg8flcdqo/image/upload/v1762443216/Purrfect_welcome_49_qe06cx.png"
         alt=""
-        className="fixed -bottom-32 -left-32 w-[500px] h-auto animate-slideInBottomLeft pointer-events-none"
+        className="fixed -bottom-32 -left-32 w-[500px] md:w-[500px] sm:w-[350px] h-auto animate-slideInBottomLeft pointer-events-none"
         aria-hidden="true"
       />
 
@@ -156,7 +156,7 @@ const Index = () => {
       <div className="flex items-center justify-center min-h-screen">
         <div className="relative w-[min(88vw,700px)] text-center z-10">
           <div className="relative bg-transparent rounded-2xl p-10 pb-11">
-            <h1 className="mb-4 text-brown font-bold text-[3.5rem] leading-tight tracking-tight">
+            <h1 className="mb-4 text-brown font-bold text-[3.5rem] md:text-[3rem] sm:text-[2rem] leading-tight tracking-tight">
               {"Purrkins Café".split("").map((letter, i) => (
                 <span
                   key={i}
@@ -168,16 +168,16 @@ const Index = () => {
               ))}
             </h1>
 
-            <p className="mb-8 text-brown text-lg font-semibold opacity-90">
+            <p className="mb-8 text-brown text-lg md:text-base sm:text-sm font-semibold opacity-90">
               Your safe space to brew confidence and skill
             </p>
 
             <button
               onClick={handleEnter}
-              className="inline-block bg-orange text-white border-none rounded-full px-10 py-3.5 text-lg font-bold transition-all hover:bg-[#cf6b31] hover:-translate-y-1 hover:scale-[1.02] active:translate-y-0 active:scale-[0.98] focus-visible:outline-3 focus-visible:outline-brown focus-visible:outline-offset-4 min-w-[180px] relative overflow-hidden"
+              className="inline-block bg-orange text-white border-none rounded-full px-10 py-3.5 md:px-8 md:py-3 sm:px-6 sm:py-2.5 text-lg md:text-base sm:text-sm font-bold transition-all hover:bg-[#cf6b31] hover:-translate-y-1 hover:scale-[1.02] active:translate-y-0 active:scale-[0.98] focus-visible:outline-3 focus-visible:outline-brown focus-visible:outline-offset-4 min-w-[180px] md:min-w-[160px] sm:min-w-[140px] relative overflow-hidden"
             >
               Enter Café
-              <span className="block text-xs font-semibold opacity-80 mt-1">
+              <span className="block text-xs md:text-[0.7rem] sm:text-[0.65rem] font-semibold opacity-80 mt-1">
                 (Press Enter)
               </span>
             </button>
