@@ -33,7 +33,14 @@ const Index = () => {
     );
     audioRef.current.volume = 0.3;
     audioRef.current.loop = true;
-    audioRef.current.play().catch(() => {});
+    // Iframe-friendly audio - requires user interaction
+    const playAudio = () => {
+      audioRef.current?.play().catch(() => {});
+      document.removeEventListener('click', playAudio);
+      document.removeEventListener('touchstart', playAudio);
+    };
+    document.addEventListener('click', playAudio, { once: true });
+    document.addEventListener('touchstart', playAudio, { once: true });
 
     return () => {
       if (audioRef.current) {
@@ -85,7 +92,7 @@ const Index = () => {
   }
 
   return (
-    <div className="fixed inset-0 bg-mint overflow-hidden">
+    <div className="fixed inset-0 bg-mint overflow-hidden" style={{ height: '100vh', width: '100vw' }}>
       {/* Mute button */}
       <button
         onClick={toggleMute}
