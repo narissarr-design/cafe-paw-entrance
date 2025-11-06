@@ -57,6 +57,11 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        mint: "#d8efe0",
+        cream: "#fff7ea",
+        brown: "#4A3A32",
+        orange: "#e37a3c",
+        pawColor: "#abd1b8",
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -84,6 +89,11 @@ export default {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "pawBounce": "pawBounce 1s ease-in-out infinite",
+        "textPulse": "textPulse 1.5s ease-in-out infinite",
+        "slideInTopRight": "slideInTopRight 1s cubic-bezier(0.34, 1.56, 0.64, 1) forwards",
+        "slideInBottomLeft": "slideInBottomLeft 1s cubic-bezier(0.34, 1.56, 0.64, 1) forwards",
+        "letterAppear": "letterAppear 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards",
       },
     },
   },
